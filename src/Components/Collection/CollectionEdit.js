@@ -14,7 +14,7 @@ const CollectionEdit = (props) => {
         event.preventDefault();
         fetch(`https://glamrepo.herokuapp.com/api/glam/${props.collectionToUpdate.id}`, {
             method: 'PUT',
-            body: JSON.stringify({log: {glamBrand: editBrand, glamName: editName, glamCat: editCat, glamBuyLoc: editBuyLoc, glamPrice: editPrice, glamLinkPic: editLink, glamComments: editComments}}),
+            body: JSON.stringify( {glamBrand: editBrand, glamName: editName, glamCat: editCat, glamBuyLoc: editBuyLoc, glamPrice: editPrice, glamLinkPic: editLink, glamComments: editComments}),
             headers: new Headers({
                 'Content-Type': 'application/json',
                 'Authorization': props.token

@@ -9,8 +9,8 @@ const CollectionTable = (props) => {
             headers: new Headers({
                 'Content-Type': 'application/json',
                 'Authorization': props.token
-            })
-        })
+            })})
+        
         .then(() => props.fetchCollection())
     }
 
